@@ -1,33 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE (v2)</title>
+    <title>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE</title>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="En application de l’article 1er du décret du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus Covid-19"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta itemprop="name" content="ATTESTATION DE DÉPLACEMENT DÉROGATOIRE" />
-    <meta
-      itemprop="description"
-      content="En application de l’article 1er du décret du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus Covid-19"
-    />
-    <meta name="og:title" content="ATTESTATION DE DÉPLACEMENT DÉROGATOIRE" />
-    <meta
-      name="og:description"
-      content="En application de l’article 1er du décret du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus Covid-19"
-    />
-    <meta name="og:url" content="https://magopian.github.io/att" />
-    <meta
-      name="og:site_name"
-      content="ATTESTATION DE DÉPLACEMENT DÉROGATOIRE"
-    />
-    <meta name="og:locale" content="fr_FR" />
-    <meta name="og:type" content="website" />
+    <meta name="description" content="En application du décret n°2020-1310 du 29 octobre 2020 prescrivant les mesures générales nécessaires pour faire face à l'épidémie de Covid19 dans le cadre de l'état d'urgence sanitaire" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <style type="text/css">
       body {
         background-color: #eeeeeb;
@@ -37,8 +14,7 @@
         width: 210mm;
       }
 
-      a,
-      a:visited {
+      a, a:visited {
         color: #0053b3;
         font-weight: 500;
         text-decoration: none;
@@ -48,8 +24,7 @@
         text-decoration: underline;
       }
 
-      h1,
-      h2 {
+      h1, h2 {
         text-align: center;
       }
       h2 {
@@ -83,7 +58,6 @@
       }
 
       #container.sortie-en-cours #declaration-wrapper {
-        display: block;
         display: flex;
         flex-direction: column;
       }
@@ -108,7 +82,7 @@
       }
 
       #date-lieu label {
-        min-width: 0px;
+        min-width: 0;
         margin-right: 10px;
       }
 
@@ -126,7 +100,7 @@
       #raisons label {
         width: 94%;
         display: inline-block;
-        padding-top: 0px;
+        padding-top: 0;
         cursor: pointer;
         text-align: justify;
       }
@@ -412,39 +386,11 @@
     </style>
   </head>
   <body>
-    <header>
-      <p><b>ATTENTION</b> <br /></p>
-      <p>
-        une version numérique n'est plus recevable - Sources :
-        <a
-          href="https://www.numerama.com/politique/611777-attestation-de-deplacement-que-faire-sans-imprimante-ni-papier.html"
-          title="article de numérama : version numérique non recevable"
-          >Numérama</a
-        >,
-        <a
-          href="https://www.bfmtv.com/tech/confinement-finalement-l-attestation-sur-smartphone-ne-suffit-pas-1877104.html"
-          title="article de bfmtv : version numérique non recevable"
-          >BFMTV</a
-        >
-        et
-        <a
-          href="https://twitter.com/Place_Beauvau/status/1240236276416118784"
-          title="Tweet du ministère de l'intérieur : version numérique non recevable"
-          >ministère de l'intérieur</a
-        >.
-      </p>
-      <p>
-        Une fois le document rempli, vous devrez l'imprimer pour pouvoir le
-        présenter lors d'un contrôle.
-      </p>
-    </header>
     <div id="container">
       <h1>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE</h1>
       <div id="saisie-infos">
         <h2>
-          En application de l’article 3 du décret du 23 mars 2020 prescrivant
-          les mesures générales nécessaires pour faire face à l'épidémie de
-          Covid19 dans le cadre de l'état d'urgence sanitaire
+          En application du décret n°2020-1310 du 29 octobre 2020 prescrivant les mesures générales nécessaires pour faire face à l'épidémie de Covid19 dans le cadre de l'état d'urgence sanitaire
         </h2>
 
         <form id="declaration-form">
@@ -454,122 +400,82 @@
             <input type="text" id="nom" name="nom" />
           </div>
           <div>
-            <label for="date-naissance"
-              >Né(e) le (au format jj/mm/aaaa) :</label
-            >
-            <input type="text" id="date-naissance" name="date-naissance" />
-          </div>
-          <div>
-            <label for="date-naissance">Lieu de naissance</label>
-            <input type="text" id="lieu-naissance" name="lieu-naissance" />
+            <label for="date-naissance">Né(e) le :</label>
+            <input type="text" style="width:120px" id="date-naissance" name="date-naissance" />
+            <label style="min-width:0;" for="lieu-naissance"> à </label>
+            <input type="text" width="120px" id="lieu-naissance" name="lieu-naissance" />
           </div>
           <div>
             <label for="adresse">Demeurant :</label>
-            <textarea
-              type="text"
-              name="adresse"
-              id="adresse"
-              rows="3"
-              cols="40"
-            ></textarea>
+            <textarea name="adresse" id="adresse" rows="3" cols="40"></textarea>
           </div>
           <br />
           <p>
-            certifie que mon déplacement est lié au motif suivant (cocher la
-            case) autorisé par l’article 3 du décret du 23 mars 2020 prescrivant
-            les mesures générales nécessaires pour faire face à l'épidémie de
-            Covid19 dans le cadre de l'état d'urgence sanitaire
-            <abbr
-              title="Les personnes souhaitant bénéficier de l'une de ces exceptions doivent se munir s'il y a lieu, lors de leurs déplacement hors de leur domicile, d'un document leur permettant de justifier que le déplacement considéré entre dans le champ de l'une de ces exceptions."
-              >[1]</abbr
-            >
-            :
+            certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par le décret n°2020-1310 du 29 octobre 2020 prescrivant les mesures générales nécessaires pour faire face à l'épidémie de Covid19 dans le cadre de l'état d'urgence sanitaire :
           </p>
 
           <div id="raisons">
             <div>
               <input type="radio" name="raison" id="travail" value="travail" />
               <label for="travail">
-                Déplacements entre le domicile et le lieu d'exercice de
-                l'activité professionnelle, lorsqu'ils sont indispensables à
-                l'exercice d'activités ne pouvant être organisées sous forme de
-                télétravail ou déplacements professionnels ne pouvant être
-                différés
-                <abbr
-                  title="A utiliser par les travailleurs non-salariés, lorsqu'ils ne peuvent disposer d'un justificatif de déplacement établi par leur employeur."
-                  >[2]</abbr
-                >.
+                Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle ou un établissement d’enseignement ou de formation; déplacements professionnels ne pouvant être différés2; déplacements pour un concours ou un examen.
               </label>
             </div>
             <div>
               <input type="radio" name="raison" id="achats" value="achats" />
               <label for="achats">
-                Déplacements pour effectuer des achats de fournitures
-                nécessaires à l’activité professionnelle et des achats de
-                première nécessité<abbr
-                  title="Y compris les acquisitions à titre gratuit (distribution de denrées alimentaires…) et les déplacements liés à la perception de prestations sociales et au retrait d’espèces"
-                  >[3]</abbr
-                >
-                dans des établissements dont les activités demeurent autorisées
-                (liste sur gouvernement.fr).
+                Déplacements pour se rendre dans un établissement culturel autorisé ou un lieu de culte; déplacements pour effectuer des achats de biens, pour des services dont la fourniture est autorisée, pour les retraits de commandes et les livraisons à domicile.
               </label>
             </div>
             <div>
               <input type="radio" name="raison" id="sante" value="sante" />
-              <label for="sante"
-                >Consultations et soins ne pouvant être assurés à distance et ne
-                pouvant être différés ; consultations et soins des patients
-                atteints d'une affection de longue durée.</label
-              >
+              <label for="sante">
+                Consultations, examens et soins ne pouvant être assurés à distance et achats de médicaments.
+              </label>
             </div>
             <div>
               <input type="radio" name="raison" id="famille" value="famille" />
-              <label for="famille"
-                >Déplacements pour motif familial impérieux, pour l’assistance
-                aux personnes vulnérables ou la garde d’enfants.</label
-              >
+              <label for="famille">
+                Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables et précaires ou la garde d’enfants.
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="raison" id="handicap" value="handicap" />
+              <label for="handicap">
+                Déplacements des personnes en situation de handicap et leur accompagnant.
+              </label>
             </div>
             <div>
               <input type="radio" name="raison" id="sport" value="sport" />
-              <label for="sport"
-                >Déplacements brefs, dans la limite d'une heure quotidienne et
-                dans un rayon maximal d'un kilomètre autour du domicile, liés
-                soit à l'activité physique individuelle des personnes, à
-                l'exclusion de toute pratique sportive collective et de toute
-                proximité avec d'autres personnes, soit à la promenade avec les
-                seules personnes regroupées dans un même domicile, soit aux
-                besoins des animaux de compagnie.</label
-              >
+              <label for="sport">
+                Déplacements en plein air ou vers un lieu de plein air, sans changement du lieu de résidence, dans la limite de trois heures quotidiennes et dans un rayon maximal de vingt kilomètres autour du domicile, liés soit à l’activité physique ou aux loisirs individuels, à l’exclusion de toute pratique sportive collective et de toute proximité avec d’autres personnes,soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.
+              </label>
             </div>
             <div>
-              <input
-                type="radio"
-                name="raison"
-                id="judiciaire"
-                value="judiciaire"
-              />
-              <label for="judiciaire"
-                >Convocation judiciaire ou administrative.</label
-              >
+              <input type="radio" name="raison" id="judiciaire" value="judiciaire" />
+              <label for="judiciaire">
+                Convocations judiciaires ou administratives et déplacements pour se rendre dans un service public.
+              </label>
             </div>
             <div>
-              <input
-                type="radio"
-                name="raison"
-                id="interet-general"
-                value="interet-general"
-              />
-              <label for="interet-general"
-                >Participation à des missions d’intérêt général sur demande de
-                l’autorité administrative</label
-              >
+              <input type="radio" name="raison" id="interet-general" value="interet-general" />
+              <label for="interet-general">
+                Participation à des missions d’intérêt général sur demande de l’autorité administrative.
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="raison" id="ecole" value="ecole" />
+              <label for="ecole">
+                Déplacements pour chercher les enfants à l’école et à l’occasion de leurs activités périscolaires.
+              </label>
             </div>
           </div>
 
           <div id="date-lieu">
-            <label for="faita">Fait à </label
-            ><input id="faita" type="text" name="fait-a" />
-            <label for="date">, le</label>
+            <label for="faita">Fait à </label>
+            <input id="faita" type="text" name="fait-a" />
+            <br>
+            <label for="date">Le :</label>
             <input type="date" id="date" name="date" />
           </div>
         </form>
@@ -598,9 +504,6 @@
               </button>
             </div>
           </div>
-        </div>
-        <div id="help-button" onclick="openModal()">
-          ?
         </div>
       </div>
 
@@ -637,87 +540,12 @@
 
     <footer>
       <p>
-        Ceci est une version à remplir en ligne du document officiel disponible
-        sur
-        <a
-          href="https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-derogatoire"
-          title="Attestation de déplacement dérogatoire"
-        >
-          le site du ministère de l'intérieur</a
-        >.
+        Ceci est une version à remplir en ligne du document officiel disponible sur <a href="https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestations-de-deplacement" title="Attestation de déplacement dérogatoire">le site du ministère de l'intérieur</a>.
       </p>
       <p>
-        Le code source est disponible sur
-        <a
-          href="https://github.com/magopian/att"
-          title="Repository 'att' de magopian"
-          >https://github.com/magopian/att</a
-        >.
+        Le code source est disponible sur <a href="https://github.com/AlexiZ/att" title="Repository 'att' de AlexiZ">https://github.com/AlexiZ/att</a>.
       </p>
     </footer>
-    <div id="open-modal" class="modal-window">
-      <div class="infobulle">
-        <div class="modal-close">
-          <span onclick="closeModal()" title="Fermer la fenêtre">
-            &times;
-          </span>
-        </div>
-        <h1>Informations</h1>
-
-        <p>
-          <b>1. La version numérique est-elle recevable ?</b><br />
-
-          <span class="text-danger">
-            Mise à jour du 18/03 à 14h : la version numérique n'est plus
-            recevable
-            <br />
-            Sources :
-            <a
-              href="https://www.numerama.com/politique/611777-attestation-de-deplacement-que-faire-sans-imprimante-ni-papier.html"
-              title="article de numérama : version numérique non recevable"
-              >Numérama</a
-            >,
-            <a
-              href="https://www.bfmtv.com/tech/confinement-finalement-l-attestation-sur-smartphone-ne-suffit-pas-1877104.html"
-              title="article de bfmtv : version numérique non recevable"
-              >BFMTV</a
-            >
-            et
-            <a
-              href="https://twitter.com/Place_Beauvau/status/1240236276416118784"
-              title="Tweet du ministère de l'intérieur : version numérique non recevable"
-              >ministère de l'intérieur</a
-            >.
-          </span>
-        </p>
-        <p>
-          <b>2. Ce document vous protège t-il d'une amende : non </b><br />
-          Si votre déplacement est jugé injustifié, vous êtes passible d'une
-          amende de 135 €.
-          <br />
-          En cas de doute sur ces restrictions de déplacement, vous pouvez
-          consulter
-          <a
-            target="_blank"
-            title="Télécharger la FAQ du gourvernement sur les déplacements autorisés"
-            href="https://www.gouvernement.fr/sites/default/files/contenu/piece-jointe/2020/03/faq-restrictions.pdf"
-            >les questions / réponses en cliquant ici</a
-          >.
-        </p>
-        <p>
-          <b>3. Comment sauvegarder cette attestation ?</b><br />
-          Les données sont sauvegardées au fur et à mesure que vous remplissez
-          le formulaire, automatiquement. Revenir sur cette page à tout moment
-          affichera les données que vous avez saisies.
-        </p>
-        <p>
-          <b>4. Où sont stockées nos informations personelles ?</b><br />
-          Sur votre navigateur internet, aucune donnée n'est transmise ou
-          conservée par un tiers. Par ailleurs ce site n'utilise ni cookie ni
-          tracker.
-        </p>
-      </div>
-    </div>
 
     <script src="./qrious.min.js"></script>
 
@@ -791,10 +619,6 @@
         localStorage.setItem("modal-closed", true);
         modal.style.opacity = "0";
         modal.style.visibility = "hidden";
-      }
-
-      if (!localStorage.getItem("modal-closed")) {
-        openModal();
       }
 
       // Save the form to localstorage on change
