@@ -1,27 +1,9 @@
 # ATTESTATION DE DÉPLACEMENT DÉROGATOIRE
 
-Version à remplir en ligne du document officiel disponible sur [le site du ministère de l'intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-derogatoire)
+__[Mise à jour le 28.11.2020]__
 
-[Remplir l'attestation en ligne](https://www.attestation-covid.fr/)
+Version à remplir en ligne du document officiel disponible sur [le site du ministère de l'intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-derogatoire)
 
 ---
 
-## Contributions
-
-Vous voulez aider ? Merci beaucoup !
-
-Ce projet étant si petit, on risque très vite de se marcher sur les pieds (exemple : il y a déjà trois PRs pour du design). Peut-être que vous pourriez ouvrir une issue pour discuter de ce que vous voulez faire et vous coordonner avec d'autres contributeurs éventuels ?
-
-L'idée du projet est d'être le plus minimaliste possible. Si possible de le confiner à un seul et unique fichier, le index.html
-
-- pas de dépendances ou d'outils
-- pas de ressources externes (fonts, images, javascript)
-
-Le but d'être minimaliste c'est que ça reste très léger sur la bande passante, la puissance nécessaire sur les devices, et sur l'hébergement.
-
-
-## V2 : un prototype
-
-Pour voir ce qu'aurais pu donner une attestation de déplacement dérogatoire numérique, qui soit utile pour les utilisateurs, et en même temps permette un contrôle plus fin de la part des forces de l'ordre.
-
-C'est sur la [branche v2](https://github.com/magopian/att/tree/v2), et testable en ligne sur https://magopian.github.io/att
+Sourcé depuis [Magopian/att:v2](https://github.com/magopian/att/tree/v2), mis à jour et publié sur [http://att.alexiz.net](http://att.alexiz.net).
